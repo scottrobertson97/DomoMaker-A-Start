@@ -6,12 +6,15 @@ const Account = models.Account;
 const loginPage = (req, res) => {
   res.render('login');
 };
+
 const signupPage = (req, res) => {
   res.render('signup');
 };
+
 const logout = (req, res) => {
   res.redirect('/');
 };
+
 const login = (request, response) => {
   const req = request;
   const res = response;
@@ -31,6 +34,7 @@ const login = (request, response) => {
     return res.json({ redirect: '/maker' });
   });
 };
+
 const signup = (request, response) => {
   const req = request;
   const res = response;

@@ -1,5 +1,5 @@
 const makerPage = (req, res) => {
-  res.reder('app');
+  res.render('app');
 };
 
 module.exports.makerPage = makerPage;
