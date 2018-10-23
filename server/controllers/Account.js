@@ -20,7 +20,7 @@ const login = (request, response) => {
   const res = response;
 
   const username = `${req.body.username}`;
-  const password = `${req.body.password}`;
+  const password = `${req.body.pass}`;
 
   if (!username || !password) {
     return res.status(400).json({ error: 'All fields are required' });
@@ -41,7 +41,7 @@ const signup = (request, response) => {
 
   req.body.username = `${req.body.username}`;
   req.body.pass = `${req.body.pass}`;
-  req.body.pass2 = `${req.pass2}`;
+  req.body.pass2 = `${req.body.pass2}`;
 
   if (!req.body.username || !req.body.pass || !req.body.pass2) {
     return res.status(400).json({ error: 'All fields are required' });
